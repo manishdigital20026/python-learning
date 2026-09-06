@@ -1,0 +1,22 @@
+# Day 8: Visitor Entry Check System
+
+# 1. सोसाइटी या ऑफिस का रजिस्टर (List)
+allowed_visitors = ["Amit", "Rohan", "Pooja"]
+
+# 2. गेट पर आया नया व्यक्ति
+guest = "Manish"
+
+print("--- Gate Security Check ---")
+print("Register me darj naam:", allowed_visitors)
+print("Aane wale ka naam:", guest)
+
+# 3. फैसला: क्या यह नाम रजिस्टर 'in' (अंदर) है?
+if guest in allowed_visitors:
+    print("\nResult: Entry Allowed! Andar ja sakte hain.")
+else:
+    print("\nResult: Entry Denied! Pehle register me naam likhwayein.")
+
+# 4. अब उसका नाम रजिस्टर में जोड़ देते हैं (append)
+allowed_visitors.append(guest)
+print("\nNaam jodne ke baad naya register:")
+print(allowed_visitors)
